@@ -1,0 +1,77 @@
+/* 
+  Localizable.strings
+  areweeven
+
+  Created by Michal Cickan on 10/09/2023.
+  
+*/
+
+"or" = "or";
+"save" = "save";
+"logout" = "Logout";
+"add" = "Add";
+"cancel" = "Cancel";
+"switchTo.buttonTitle" = "Switch to";
+"loginButton.Email" = "Login with email";
+"signUp" = "Sign up";
+"login.title" = "Login";
+"login.buttonTitle" = "Login";
+"emailHint" = "Email";
+"passwordHint" = "Password";
+"registration.title" = "Register";
+"repeatPasswordHint" = "Repeat password";
+"homeTab.title" = "Home";
+"settingsTab.title" = "Settings";
+"groupsTab.title" = "Groups";
+"appearance.title" = "Appearance";
+"profile.title" = "Profile";
+"nameHint" = "Name";
+"surnameHint" = "Surname";
+"middleNameHint" = "Middle name";
+"updatePersonalInfo.title" = "Update basic info";
+"addresses" = "Addresses";
+"warning" = "Warning";
+"info" = "Info";
+"logoutWarningText" = "Do you really want to logout?";
+"chooseTheme.title" = "Choose theme";
+"dark" = "Dark";
+"light" = "Light";
+"system" = "System";
+"noAddressText" = "You have not provided any address so far.";
+"addAddress.title" = "Add address";
+"zip" = "ZIP";
+"street" = "Street";
+"country" = "Country";
+"emptyGroupListHint" = "You have no groups";
+"createGroup.title" = "Create group";
+"groupNameHint" = "Group name";
+"current" = "Current";
+"yourGroupsSection.title" = "Your groups";
+"groupsYouInvitedIn" = "Group Invitations";
+"addGroupMember" = "Add group member";
+"searchUserHint" = "email or name";
+"unknown" = "Unknown";
+"invitationSentText" = "Your invitation to group was successfully sent to {user_email}.";
+"noResultsFoundText" = "There are no results for this query.";
+"searchMinimumHint" = "Please provide me at least 3 characters";
+"groupInvitations.title" = "Group invitations";
+"emptyInvitationListHint" = "You don't have any invitation right now";
+"invitationAcceptInfoText" = "Do you want to accept the invitation?";
+"yes" = "yes";
+"decline" = "decline";
+"close" = "close";
+"expense.title" = "Expense";
+"noExpensesInGroup" = "You have no expenses in the group with name '{groupName}'";
+"addExpense.title" = "Add expense";
+"shouldPayHint" = "Should pay";
+"paidHint" = "Paid";
+"addExpenseDescription" = "Add an expense you did and split it with your friends. The algorithm computes debt results as a whole from all your expenses. After the price computation, which the debtor should pay, the algorithm randomly assigns whom to pay according to who paid more than they should. It is not computed per each expense.";
+"expenseDescriptionHint" = "Expense description";
+"homeExpensesSection.title" = "Last expenses";
+"seeAll" = "See all";
+"expenseList.title" = "Expenses";
+"dueAmount.title" = "Should pay";
+"totalAmount.title" = "Total amount";
+"createdAt.title" = "Created";
+"membersSection.title" = "Members";
+
