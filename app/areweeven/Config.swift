@@ -1,5 +1,5 @@
 import Foundation
 
 struct Config {
-    static let baseAPIUrl = "localhost:8080"
+    static let baseAPIUrl = "http://localhost:8080"
 }

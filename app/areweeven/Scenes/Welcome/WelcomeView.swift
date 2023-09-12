@@ -5,8 +5,7 @@ struct WelcomeView<R: WelcomeRouterType, VM: WelcomeViewModelType>: View {
     @StateObject private var viewModel: VM
     @StateObject private var router: R
     
-    init(viewModel: VM = WelcomeViewModel(service: WelcomeService()),
-         router: R) {
+    init(viewModel: VM, router: R) {
         _viewModel = StateObject(wrappedValue: viewModel)
         _router = StateObject(wrappedValue: router)
     }
@@ -19,6 +18,7 @@ struct WelcomeView<R: WelcomeRouterType, VM: WelcomeViewModelType>: View {
             SocialButton(kind: .email) {
                 router.showLogin()
             }
+            .navigation(router)
             TextDivider(text: L10n.or.uppercased())
                 .padding(.vertical, 20)
             Button(L10n.signUp) {
@@ -39,6 +39,7 @@ struct WelcomeView<R: WelcomeRouterType, VM: WelcomeViewModelType>: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView(
+            viewModel: WelcomeViewModel(),
             router: WelcomeRouter(isPresented: .constant(false))
         )
     }

@@ -8,9 +8,11 @@ protocol WelcomeRouterType: Router {
 
 final class WelcomeRouter: Router, WelcomeRouterType {
     func showLogin() {
-        let router = WelcomeRouter(isPresented: isNavigating)
         navigateTo(
-            WelcomeView(router: router)
+            LoginWithEmailView(
+                viewModel: LoginWithEmailViewModel(tokenStorage: AuthManager.shared),
+                router: LoginWithEmailRouter(isPresented: isNavigating)
+            )
         )
     }
     

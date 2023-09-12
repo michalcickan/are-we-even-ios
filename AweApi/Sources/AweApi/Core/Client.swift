@@ -31,6 +31,7 @@ extension Client {
                 endpoint.fullUrl(with: baseUrl),
                 method: method,
                 parameters: parameters,
+                encoder: method == .get ? URLEncodedFormParameterEncoder.default : JSONParameterEncoder.default,
                 headers: headers(for: endpoint),
                 interceptor: authInterceptor
             )

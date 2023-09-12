@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9505B5812AB0B350000A23C0 /* LoginWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505B5802AB0B350000A23C0 /* LoginWithEmailView.swift */; };
+		9505B5832AB0B407000A23C0 /* LoginWithEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505B5822AB0B407000A23C0 /* LoginWithEmailRouter.swift */; };
+		9505B5852AB0B452000A23C0 /* LoginWithEmailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505B5842AB0B452000A23C0 /* LoginWithEmailViewModelType.swift */; };
+		9505B5872AB0B4D0000A23C0 /* LoginWithEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505B5862AB0B4D0000A23C0 /* LoginWithEmailViewModel.swift */; };
+		9505B5892AB0B5AF000A23C0 /* LoginWithEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505B5882AB0B5AF000A23C0 /* LoginWithEmailService.swift */; };
 		95569DE02AAE03B400480016 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95569DDF2AAE03B400480016 /* WelcomeView.swift */; };
 		95569DE22AAE03F100480016 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95569DE12AAE03F100480016 /* WelcomeViewModel.swift */; };
 		95569DE42AAE052900480016 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95569DE32AAE052900480016 /* WelcomeViewModelType.swift */; };
@@ -37,6 +42,7 @@
 		959419D62A97637E00767439 /* areweevenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959419D52A97637E00767439 /* areweevenTests.swift */; };
 		959419E02A97637E00767439 /* areweevenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959419DF2A97637E00767439 /* areweevenUITests.swift */; };
 		959419E22A97637E00767439 /* areweevenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959419E12A97637E00767439 /* areweevenUITestsLaunchTests.swift */; };
+		95DED5632AB1146A00F6B1A1 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DED5622AB1146A00F6B1A1 /* TokenStorage.swift */; };
 		95E69BF82A97C58D00A4AE6D /* AweApi in Frameworks */ = {isa = PBXBuildFile; productRef = 95E69BF72A97C58D00A4AE6D /* AweApi */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9505B5802AB0B350000A23C0 /* LoginWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailView.swift; sourceTree = "<group>"; };
+		9505B5822AB0B407000A23C0 /* LoginWithEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailRouter.swift; sourceTree = "<group>"; };
+		9505B5842AB0B452000A23C0 /* LoginWithEmailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailViewModelType.swift; sourceTree = "<group>"; };
+		9505B5862AB0B4D0000A23C0 /* LoginWithEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailViewModel.swift; sourceTree = "<group>"; };
+		9505B5882AB0B5AF000A23C0 /* LoginWithEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailService.swift; sourceTree = "<group>"; };
 		9531D2852A97989C0013331E /* AweApi */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AweApi; path = ../AweApi; sourceTree = "<group>"; };
 		95569DDF2AAE03B400480016 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		95569DE12AAE03F100480016 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +102,8 @@
 		959419DB2A97637E00767439 /* areweevenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = areweevenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959419DF2A97637E00767439 /* areweevenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = areweevenUITests.swift; sourceTree = "<group>"; };
 		959419E12A97637E00767439 /* areweevenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = areweevenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95DED5602AB109BC00F6B1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95DED5622AB1146A00F6B1A1 /* TokenStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +134,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9505B57F2AB0B32E000A23C0 /* LoginWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				9505B5802AB0B350000A23C0 /* LoginWithEmailView.swift */,
+				9505B5822AB0B407000A23C0 /* LoginWithEmailRouter.swift */,
+				9505B5842AB0B452000A23C0 /* LoginWithEmailViewModelType.swift */,
+				9505B5862AB0B4D0000A23C0 /* LoginWithEmailViewModel.swift */,
+				9505B5882AB0B5AF000A23C0 /* LoginWithEmailService.swift */,
+			);
+			path = LoginWithEmail;
+			sourceTree = "<group>";
+		};
 		9531D2842A97989C0013331E /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,13 +200,6 @@
 				95569E082AAE4B5400480016 /* NavigationModifier.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		95569E0E2AAE551200480016 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		95569E152AAE5FF600480016 /* Wrappers */ = {
@@ -245,6 +263,8 @@
 		959419C32A97637D00767439 /* areweeven */ = {
 			isa = PBXGroup;
 			children = (
+				95DED5612AB1145C00F6B1A1 /* Protocols */,
+				95DED5602AB109BC00F6B1A1 /* Info.plist */,
 				95569E1E2AAE6BA000480016 /* Managers */,
 				95569E1B2AAE648000480016 /* API */,
 				95569E152AAE5FF600480016 /* Wrappers */,
@@ -288,12 +308,20 @@
 		959419EE2A9789B800767439 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9505B57F2AB0B32E000A23C0 /* LoginWithEmail */,
 				95569E212AAE70D500480016 /* Home */,
-				95569E0E2AAE551200480016 /* Login */,
 				959419C62A97637D00767439 /* RootView.swift */,
 				95569DDE2AAE039700480016 /* Welcome */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		95DED5612AB1145C00F6B1A1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				95DED5622AB1146A00F6B1A1 /* TokenStorage.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		95E69BF62A97C58D00A4AE6D /* Frameworks */ = {
@@ -445,6 +473,8 @@
 			files = (
 				95569E392AAE713C00480016 /* HomeViewModelType.swift in Sources */,
 				95569E372AAE713C00480016 /* HomeViewModel.swift in Sources */,
+				9505B5892AB0B5AF000A23C0 /* LoginWithEmailService.swift in Sources */,
+				95DED5632AB1146A00F6B1A1 /* TokenStorage.swift in Sources */,
 				95569DE42AAE052900480016 /* WelcomeViewModelType.swift in Sources */,
 				95569E202AAE6BAC00480016 /* AuthManager.swift in Sources */,
 				959419C72A97637D00767439 /* RootView.swift in Sources */,
@@ -454,9 +484,13 @@
 				95569E3A2AAE713C00480016 /* HomeService.swift in Sources */,
 				95569DE22AAE03F100480016 /* WelcomeViewModel.swift in Sources */,
 				95569E362AAE713C00480016 /* HomeRouter.swift in Sources */,
+				9505B5852AB0B452000A23C0 /* LoginWithEmailViewModelType.swift in Sources */,
+				9505B5832AB0B407000A23C0 /* LoginWithEmailRouter.swift in Sources */,
 				95569E042AAE2B3400480016 /* Router.swift in Sources */,
 				95569DE02AAE03B400480016 /* WelcomeView.swift in Sources */,
+				9505B5872AB0B4D0000A23C0 /* LoginWithEmailViewModel.swift in Sources */,
 				95569E122AAE5B4900480016 /* ApiClient.swift in Sources */,
+				9505B5812AB0B350000A23C0 /* LoginWithEmailView.swift in Sources */,
 				95569E0B2AAE4C4700480016 /* WelcomeRouter.swift in Sources */,
 				95569E382AAE713C00480016 /* HomeView.swift in Sources */,
 				95569E172AAE600E00480016 /* SecureStorage.swift in Sources */,
@@ -638,6 +672,7 @@
 				DEVELOPMENT_TEAM = XW2U839GPC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = areweeven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -667,6 +702,7 @@
 				DEVELOPMENT_TEAM = XW2U839GPC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = areweeven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

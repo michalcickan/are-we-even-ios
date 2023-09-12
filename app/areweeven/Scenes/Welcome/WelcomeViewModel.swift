@@ -1,7 +1,7 @@
 import Foundation
 
-class WelcomeViewModel: WelcomeViewModelInput {
-    init(service: WelcomeService) {
+final class WelcomeViewModel: WelcomeViewModelInput {
+    init(service: WelcomeServiceType = WelcomeService()) {
         
     }
 }

@@ -11,9 +11,15 @@ struct RootView: View {
     
     var content: any View {
         guard authModel.isAuthenticated else {
-            return WelcomeView(router: WelcomeRouter(isPresented: .constant(false)))
+            return WelcomeView(
+                viewModel: WelcomeViewModel(service: WelcomeService()),
+                router: WelcomeRouter(isPresented: .constant(false))
+            )
         }
-        return HomeView(router: HomeRouter(isPresented: .constant(false)))
+        return HomeView(
+            viewModel: HomeViewModel(service: HomeService()),
+            router: HomeRouter(isPresented: .constant(false))
+        )
     }
 }
 
