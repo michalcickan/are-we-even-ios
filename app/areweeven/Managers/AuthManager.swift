@@ -17,8 +17,8 @@ final class AuthManager: ObservableObject, TokensProvider {
     }
 }
 
-extension AuthManager: TokenStorage {
-    func saveTokens(tokens: AccessToken?) {
+extension AuthManager: TokensStorage {
+    func save(tokens: Tokens?) {
         self.accessToken = tokens?.accessToken
         self.refreshToken = tokens?.refreshToken
     }

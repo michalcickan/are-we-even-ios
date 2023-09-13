@@ -9,6 +9,7 @@ public actor Client {
     
     public init(baseUrl: String,
                 tokensProvider: TokensProvider,
+                tokensStorage: TokensStorage,
                 deviceId: String,
                 logger: Logger? = nil) {
         self.baseUrl = baseUrl
@@ -16,7 +17,8 @@ public actor Client {
         self.logger = logger
         self.authInterceptor = AuthRequestInterceptor(
             tokensProvider: tokensProvider,
-            tokenRefreshService: AuthService(baseUrl: baseUrl)
+            tokenRefreshService: AuthService(baseUrl: baseUrl),
+            tokensStorage: tokensStorage
         )
     }
 }
@@ -54,18 +56,21 @@ extension Client {
 private extension Client {
     func sendAsyncRequest<T: Decodable>(request: DataRequest) async throws -> T {
         return try await withCheckedThrowingContinuation { continuation in
-            request.responseDecodable(of: ResponseWrapper<T>.self) { response in
-                switch response.result {
-                case let .success(wrapper):
-                    do {
-                        continuation.resume(returning: try wrapper.extractModel())
-                    } catch {
+            request
+                .responseDecodable(of: ResponseWrapper<T>.self) { response in
+                    switch response.result {
+                    case let .success(wrapper):
+                        do {
+                            let wrappedModel = try wrapper.extractModel()
+                            self.authInterceptor.onResponse(response: wrappedModel)
+                            continuation.resume(returning: wrappedModel)
+                        } catch {
+                            continuation.resume(throwing: error)
+                        }
+                    case let .failure(error):
                         continuation.resume(throwing: error)
                     }
-                case let .failure(error):
-                    continuation.resume(throwing: error)
                 }
-            }
         }
     }
 }

@@ -10,7 +10,7 @@ final class WelcomeRouter: Router, WelcomeRouterType {
     func showLogin() {
         navigateTo(
             LoginWithEmailView(
-                viewModel: LoginWithEmailViewModel(tokenStorage: AuthManager.shared),
+                viewModel: LoginWithEmailViewModel(),
                 router: LoginWithEmailRouter(isPresented: isNavigating)
             )
         )

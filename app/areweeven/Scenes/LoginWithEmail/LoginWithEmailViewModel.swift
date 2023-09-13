@@ -14,11 +14,9 @@ final class LoginWithEmailViewModel: LoginWithEmailOutput, LoginWithEmailInput {
     
     private var cancellables: Set<AnyCancellable> = []
     private let service: LoginWithEmailServiceType
-    private let tokenStorage: TokenStorage
     
-    init(service: LoginWithEmailServiceType = LoginWithEmailService(), tokenStorage: TokenStorage) {
+    init(service: LoginWithEmailServiceType = LoginWithEmailService()) {
         self.service = service
-        self.tokenStorage = tokenStorage
         
         Publishers.CombineLatest($emailText, $passwordText)
             .sink { [unowned self] email, password in
@@ -34,7 +32,6 @@ final class LoginWithEmailViewModel: LoginWithEmailOutput, LoginWithEmailInput {
                     email: self.emailText,
                     password: self.passwordText
                 )
-                tokenStorage.saveTokens(tokens: result)
             } catch {
                 print(error)
             }

@@ -162,8 +162,6 @@ internal enum L10n {
   internal enum LoginButton {
     /// Login with email
     internal static let email = L10n.tr("Localizable", "loginButton.Email", fallback: "Login with email")
-    /// Login with Google
-    internal static let google = L10n.tr("Localizable", "loginButton.Google", fallback: "Login with Google")
   }
   internal enum MembersSection {
     /// Members

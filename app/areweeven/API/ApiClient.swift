@@ -4,8 +4,9 @@ import UIKit
 
 let apiClient: Client = {
    return Client(
-    baseUrl: Config.baseAPIUrl,
+    baseUrl: Environment.value(for: .apiBaseUrl),
     tokensProvider: AuthManager.shared,
+    tokensStorage: AuthManager.shared,
     deviceId: (UIDevice.current.identifierForVendor ?? UUID()).uuidString
    )
 }()

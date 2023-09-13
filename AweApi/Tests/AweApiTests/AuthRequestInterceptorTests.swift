@@ -85,7 +85,7 @@ struct MockTokensProvider: TokensProvider {
 class MockTokenRefreshService: TokenRefreshable {
     var refreshTokenCalled = false
     
-    func refreshToken(_ refreshToken: String, completionHandler: @escaping (Result<AccessToken, Error>) -> Void) {
+    func refreshToken(_ refreshToken: String, completionHandler: @escaping (Result<Tokens, Error>) -> Void) {
         refreshTokenCalled = true
     }
 }

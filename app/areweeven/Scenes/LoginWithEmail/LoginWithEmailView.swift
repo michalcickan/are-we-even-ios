@@ -37,7 +37,7 @@ struct LoginWithEmailView<R: LoginWithEmailRouterType, VM: LoginWithEmailViewMod
 struct LoginWithEmailView_Previews: PreviewProvider {
     static var previews: some View {
         LoginWithEmailView(
-            viewModel: LoginWithEmailViewModel(tokenStorage: AuthManager.shared),
+            viewModel: LoginWithEmailViewModel(),
             router: LoginWithEmailRouter(isPresented: .constant(false))
         )
     }

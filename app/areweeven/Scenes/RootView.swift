@@ -16,10 +16,7 @@ struct RootView: View {
                 router: WelcomeRouter(isPresented: .constant(false))
             )
         }
-        return HomeView(
-            viewModel: HomeViewModel(service: HomeService()),
-            router: HomeRouter(isPresented: .constant(false))
-        )
+        return MainTabView()
     }
 }
 

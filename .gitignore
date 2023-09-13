@@ -1,0 +1,13 @@
+# Xcode
+**/*.swp
+**/*.swp
+**/*.lock
+**/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+*.xcworkspace/
+**/xcuserdata/xcdebugger/
+**/xcuserdata/xcschemes/
+**/*.xccheckout
+**/*.xcuserstate
+**/*.xcscmblueprint
+**/*.xcconfig

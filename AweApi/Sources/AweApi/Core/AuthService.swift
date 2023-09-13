@@ -6,14 +6,14 @@ struct AuthService {
 
 extension AuthService: TokenRefreshable {
     func refreshToken(_ refreshToken: String,
-                      completionHandler: @escaping (Result<AccessToken, Error>) -> Void) {
+                      completionHandler: @escaping (Result<Tokens, Error>) -> Void) {
         AF
             .request(
                 Endpoint.token.fullUrl(with: baseUrl),
                 method: .get,
                 parameters:  RefreshTokenParameters(refreshToken: refreshToken)
             )
-            .responseDecodable(of: ResponseWrapper<AccessToken>.self) { response in
+            .responseDecodable(of: ResponseWrapper<Tokens>.self) { response in
                 switch response.result {
                 case let .success(wrapper):
                     do {
