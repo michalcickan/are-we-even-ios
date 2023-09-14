@@ -10,4 +10,4 @@
 **/*.xccheckout
 **/*.xcuserstate
 **/*.xcscmblueprint
-**/*.xcconfig
+app/*.xcconfig
